@@ -1,43 +1,43 @@
-import { useForm } from "react-hook-form";
-import schema from "../schemas/FormValid.jsx";
-import { yupResolver } from "@hookform/resolvers/yup";
-import { useState } from "react";
+import { useForm } from "react-hook-form"
+import schema from "../schemas/FormValid.jsx"
+import { yupResolver } from "@hookform/resolvers/yup"
+import { useState } from "react"
 
 export default function Form() {
-    const [sent, setSent] = useState(false);
-    const [loading, setLoading] = useState(false);
+    const [sent, setSent] = useState(false);               //speichert, ob das Formular gesendet wurde
+    const [loading, setLoading] = useState(false);         //speichert, ob gerade gesendet wird
 
     const {
-        register,
-        handleSubmit,
-        reset,
-        formState: { errors },
+        register,                                          //verbindet Inputs mit dem Formular
+        handleSubmit,                                      //verarbeitet das Absenden
+        reset,                                             //leert das Formular
+        formState: { errors },                             //enthält Fehlermeldungen 
     } = useForm({
-        mode: "onSubmit",
-        resolver: yupResolver(schema),
+        mode: "onSubmit",                                  //Validierung passiert erst beim Absenden
+        resolver: yupResolver(schema),                     //hier wird das Yup-Schema für die Validierung benutzt
     });
 
-    const onSubmit = async (data) => {
+    const onSubmit = async (data) => {                     //diese Funktion wird beim Absenden aufgerufen.
         try {
-            setLoading(true);
+            setLoading(true);                              //ich starte den Loading-Zustand
 
-            const response = await fetch("https://formspree.io/f/mkokllka", {
-                method: "POST",
+            const response = await fetch("https://formspree.io/f/mkokllka", {       //ich sende die Daten an Formspree
+                method: "POST",                                                     //die Daten werden gesendet.
                 headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json",
+                    "Content-Type": "application/json",                             //ich sage, dass die Daten im JSON-Format sind
+                    Accept: "application/json",                                     
                 },
-                body: JSON.stringify(data),
+                body: JSON.stringify(data),                                         //ich konvertiere die Formulardaten in JSON
             });
 
-            if (response.ok) {
-                setSent(true);
-                reset();
+            if (response.ok) {                                                       //wenn die Anfrage erfolgreich war:
+                setSent(true);                                                       //ich zeige eine Erfolgsmeldung
+                reset();                                                             //ich leere das Formular
             }
         } catch (error) {
-            console.log("ERROR:", error);
+            console.log("ERROR:", error);                                           //Fehler werden in der Konsole angezeigt
         } finally {
-            setLoading(false);
+            setLoading(false);                                                      //Loading wird wieder deaktiviert
         }
     };
 
