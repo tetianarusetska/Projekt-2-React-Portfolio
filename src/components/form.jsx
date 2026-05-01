@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form"
-import schema from "../schemas/FormValid.jsx"
+import schema from "../schemas/FormValid.js"
 import { yupResolver } from "@hookform/resolvers/yup"
 import { useState } from "react"
 
