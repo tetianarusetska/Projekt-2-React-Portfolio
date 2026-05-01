@@ -1,5 +1,5 @@
 import TextDisperseLines from '../components/animations/TextDisperse.jsx'
-import DownloadButton from '../components/Button.jsx'
+import DownloadButton from '../components/CVButton.jsx'
 import TextAbout from '../components/TextAbout.jsx'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSquareFacebook, faSquareLinkedin, faWhatsapp, faTelegram, faInstagram } from "@fortawesome/free-brands-svg-icons"
