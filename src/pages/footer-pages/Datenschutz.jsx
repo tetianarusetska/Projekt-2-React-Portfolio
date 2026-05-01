@@ -1,8 +1,21 @@
 export default function Datenschutz() {
-    return <div className="datenschutz">
-        <a href="/" className="inline-block mt-[30px] mx-[120px] text-[25px] font-extralight">Home</a>
-        <p className="text-center leading-[1.2em] font-[Montserrat, sans-serif] text-[32px] font-extralight mt-[80px]">DATENSCHUTZERKLÄRUNG</p>
-        <div className="my-[20px] mx-[120px] flex flex-col gap-[20px] w-[797px] leading-[1.2em] font-[Montserrat, sans-serif] text-[20px] font-extralight mt-[80px]">
+    return <div
+        className="datenschutz"
+    >
+        <a
+            href="/"
+            className="inline-block mt-[30px] mx-[120px] text-[25px] font-extralight"
+        >
+            Home
+        </a>
+        <p
+            className="text-center leading-[1.2em] font-[Montserrat, sans-serif] text-[32px] font-extralight mt-[80px]"
+        >
+            DATENSCHUTZERKLÄRUNG
+        </p>
+        <div
+            className="my-[20px] mx-[120px] flex flex-col gap-[20px] w-[797px] leading-[1.2em] font-[Montserrat, sans-serif] text-[20px] font-extralight mt-[80px]"
+        >
             <p>1. Datenschutz auf einen Blick</p>
             <p>Der Schutz Ihrer persönlichen Daten ist mir wichtig.Diese Website dient ausschließlich der Präsentation meines Portfolios.</p>
             <p>2. Verantwortliche Stelle</p>

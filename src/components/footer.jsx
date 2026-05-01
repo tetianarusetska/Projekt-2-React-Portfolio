@@ -8,7 +8,9 @@ export default function Footer() {
         { target: "/footer-contact", displayName: "Kontakt" }
     ]
 
-    return <div className="relative leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[20px] flex flex-row justify-center gap-[50px] mt-[250px] mb-[15px]">
+    return <div 
+    className="relative leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[20px] flex flex-row justify-center gap-[50px] mt-[250px] mb-[15px]"
+    >
         {links.map((link, index) => (
             <Link key={index} to={link.target}>
                 {link.displayName}

@@ -8,8 +8,12 @@ export default function Menu() {
         { target: "/#contact", displayName: "kontakt" },
     ]
 
-    return <div className="menu">
-        <nav className="flex flex-row gap-35 leading-[1.2em] mt-5 ml-[160px] font-[MelodramaLight] text-[38px]">
+    return <div
+        className="menu"
+    >
+        <nav
+            className="flex flex-row gap-35 leading-[1.2em] mt-5 ml-[160px] font-[MelodramaLight] text-[38px]"
+        >
             {links.map((link, index) => (
                 <Link key={index} to={link.target}>
                     {link.displayName}

@@ -3,7 +3,7 @@ import schema from "../schemas/FormValid.js"
 import { yupResolver } from "@hookform/resolvers/yup"
 import { useState } from "react"
 
-export default function Form() {
+export default function ContactForm() {
     const [sent, setSent] = useState(false);               //speichert, ob das Formular gesendet wurde
     const [loading, setLoading] = useState(false);         //speichert, ob gerade gesendet wird
 
@@ -25,7 +25,7 @@ export default function Form() {
                 method: "POST",                                                     //die Daten werden gesendet.
                 headers: {
                     "Content-Type": "application/json",                             //ich sage, dass die Daten im JSON-Format sind
-                    Accept: "application/json",                                     
+                    Accept: "application/json",
                 },
                 body: JSON.stringify(data),                                         //ich konvertiere die Formulardaten in JSON
             });
@@ -46,8 +46,12 @@ export default function Form() {
             className="flex flex-col gap-[20px] mt-[180px] ml-[160px]"
             onSubmit={handleSubmit(onSubmit)}
         >
-            <div className="flex flex-col gap-[10px]">
-                <label className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[32px]">
+            <div
+                className="flex flex-col gap-[10px]"
+            >
+                <label
+                    className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[32px]"
+                >
                     Vorname, Nachname
                 </label>
 
@@ -59,8 +63,12 @@ export default function Form() {
                 {errors.name && <p>{errors.name.message}</p>}
             </div>
 
-            <div className="flex flex-col gap-[10px]">
-                <label className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[32px]">
+            <div
+                className="flex flex-col gap-[10px]"
+            >
+                <label
+                    className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[32px]"
+                >
                     Email
                 </label>
 
@@ -72,8 +80,12 @@ export default function Form() {
                 {errors.email && <p>{errors.email.message}</p>}
             </div>
 
-            <div className="flex flex-col gap-[10px]">
-                <label className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[32px]">
+            <div
+                className="flex flex-col gap-[10px]"
+            >
+                <label
+                    className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[32px]"
+                >
                     Brief
                 </label>
 
@@ -94,7 +106,9 @@ export default function Form() {
             </button>
 
             {sent && (
-                <p className="text-white">
+                <p
+                    className="text-white"
+                >
                     Danke für Ihre Nachricht!
                 </p>
             )}
