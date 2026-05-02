@@ -26,12 +26,14 @@ function WorkRow({ index, title, category, link }) { // erstellt eine einzelne Z
             <motion.div // das ist die sichtbare Zeile mit Animationen
                 onMouseMove={onMouseMove}
                 onMouseLeave={onMouseLeave}
-                className="grid grid-cols-[60px_1fr_auto] items-center py-6 cursor-pointer"
+                className="
+                grid grid-cols-[40px_1fr] gap-y-1 py-4 items-center cursor-pointer
+                md:grid grid-cols-[60px_1fr_auto] md:gap-y-0 md:items-center md:py-6 cursor-pointer"
                 style={{ x: smoothX, y: smoothY }}
             >
-                <span className="opacity-50">{index}</span>
-                <span>{title}</span>
-                <span className="opacity-50">{category}</span>
+                <span className="opacity-50 text-sm md:text-3xl">{index}</span>
+                <span className="text-sm md:text-3xl ">{title}</span>
+                <span className="opacity-50 col-start-2 text-xs md:col-start-3 md:text-3xl">{category}</span>
             </motion.div>
         </Link>
     )
@@ -79,7 +81,7 @@ export default function SelectedWorks4({
 
                     {i < works.length - 1 && (
                         <div
-                            className="h-px bg-white/20 ml-[60px]"
+                            className="h-px bg-white/20 ml-[40px] md:ml-[60px]"
                         />
                     )}
                 </React.Fragment>
