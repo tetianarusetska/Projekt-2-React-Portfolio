@@ -9,7 +9,7 @@ function ITPath() {
             className="pageTitle"
         >
             <p
-                lassName="text-center leading-[1.2em] font-[Boxing] text-[72px] mt-[40px]"
+                className="text-center leading-[1.2em] font-[Boxing] text-[72px] mt-[40px]"
             >
                 WEG IN DIE IT
             </p>

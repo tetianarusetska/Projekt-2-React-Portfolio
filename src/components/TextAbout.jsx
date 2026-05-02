@@ -2,8 +2,9 @@ export default function TextAbout() {
     return (
         <div
             className="
-            w-[500px]
-            h-[266px]
+            w-[279px] h-[458px]
+            md:w-[500px] 
+            md:h-[266px]
           bg-white
           text-[#00065E]
             text-[20px]

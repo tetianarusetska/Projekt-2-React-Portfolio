@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import "tailwindcss";
+
 @font-face {
   font-family: 'MelodramaVariable';
   src: url('./assets/fonts/Melodrama_Complete-2/Fonts/WEB/fonts/Melodrama-Variable.woff2') format('woff2');
@@ -19,8 +21,6 @@
   font-family: 'Boxing';
   src: url('./assets/fonts/Boxing_Complete/Fonts/WEB/fonts/Boxing-Regular.woff2') format('woff2');
 }
-
-@import "tailwindcss";
 
 :root {
   --backgroundColor: black;

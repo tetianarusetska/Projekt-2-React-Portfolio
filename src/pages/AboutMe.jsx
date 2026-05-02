@@ -16,30 +16,55 @@ function AboutMe() {
     };
 
     return <div
-        id="aboutme" className="min-h-screen min-w-screen px-[80px]"
+        id="aboutme" className="
+        min-h-screen min-w-screen 
+        lg:px-[80px]
+        md:mt-[-600px]
+        mt-[-250px]
+        lg:mt-[0px]
+        "
     >
         <div
-            className="flex flex-row gap-[60px]"
+            className="
+            flex flex-col items-center
+            lg:flex-row
+            lg:gap-[60px]
+            "
         >
-            <div
-                className="flex flex-col mt-[80px] flex-1"
+            <div className="
+            flex flex-col items-center flex-1  
+            lg:items-start
+            lg:mt-[80px]
+            "
             >
-                <div
-                    className="aboutMe flex flex-col gap-[43px]"
+                <div className="
+                    aboutMe flex flex-col items-center w-full
+                    lg:items-start lg:gap-[43px]
+                    "
                 >
                     <div>
                         <p
-                            className="leading-[1.2em] font-[MelodramaLight] text-[72px]"
+                            className="
+                            leading-[1.2em] font-[MelodramaLight] 
+                            text-center lg:text-left
+                            text-[42px] md:text-[72px]
+                            "
                         >
                             ÜBER MICH
                         </p>
                     </div>
-                    <div>
+                    <div className="
+                    flex justify-center
+                    md:mt-[40px]
+                    mt-[40px]
+                    lg:mt-[0px]
+                    "
+                    >
                         <TextAbout />
                     </div>
                 </div>
                 <div
-                    className="downlButton"
+                    className="downlButton mt-[-40px] md:mt-[0px]"
                 >
                     <DownloadButton />
                 </div>
@@ -47,7 +72,9 @@ function AboutMe() {
                     className="links"
                 >
                     <ul
-                        className="flex flex-row gap-[6px] mt-[63px]"
+                        className="
+                        flex flex-row justify-center lg:justify-start gap-[6px] mt-[40px] md:mt-[63px] 
+                        "
                     >
                         {socialLinks.map((item, index) => (
                             <li key={index}>
@@ -63,7 +90,9 @@ function AboutMe() {
                 </div>
             </div>
             <div
-                className="flex flex-col flex-1 gap-[123px] mt-[150px] ml-[300px]"
+                className="
+                flex flex-col flex-1 lg:gap-[123px] lg:mt-[150px] lg:ml-[300px]
+                "
             >
                 <div
                     className="textDispAnimation"
@@ -71,26 +100,36 @@ function AboutMe() {
                     <TextDisperseLines />
                 </div>
                 <div
-                    className="additInfo flex flex-row gap-[81px]"
+                    className="additInfo hidden 
+                    lg:flex lg:flex-row lg:gap-[81px]
+                    "
                 >
                     <div>
                         <p
-                            className="leading-[1.2em] font-[MelodramaLight] text-[38px]"
+                            className="
+                            leading-[1.2em] font-[MelodramaLight] lg:text-[38px]
+                            "
                         >
                             SPRACHE:
                         </p>
                         <p
-                            className="leading-[1.2em] font-[Montserrat, sans-serif] text-[25px] font-extralight mt-[10px]"
+                            className="
+                            leading-[1.2em] font-[Montserrat,sans-serif] text-[25px] font-extralight lg:mt-[10px]
+                            "
                         >
                             Deutsch, Englisch,<br></br>Ukrainisch,<br></br>Russisch
                         </p>
                     </div>
                     <div>
-                        <p className="leading-[1.2em] font-[MelodramaLight] text-[38px]"
+                        <p className="
+                        leading-[1.2em] font-[MelodramaLight] text-[38px]
+                        "
                         >
                             HOBBY:
                         </p>
-                        <p className="leading-[1.2em] font-[Montserrat, sans-serif] text-[25px] font-extralight mt-[10px]"
+                        <p className="
+                        leading-[1.2em] font-[Montserrat,sans-serif] lg:text-[25px] font-extralight lg:mt-[10px]
+                        "
                         >
                             Analoge Fotografie
                         </p>

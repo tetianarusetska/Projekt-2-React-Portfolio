@@ -60,7 +60,7 @@ rusetskatata@gmail.com`,
 
     return (
         <div
-            className="whitespace-pre-line font-sans"
+            className="hidden lg:block whitespace-pre-line font-sans"
             style={{ fontSize, lineHeight, color }}
         >
             {lines.map((line, lineIndex) => ( // alle Zeile werden einzeln dargestellt

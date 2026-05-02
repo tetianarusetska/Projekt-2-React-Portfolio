@@ -8,7 +8,7 @@ export default function TextOnPath() {
             offsetRef.current += 0.2                             // der Startpunkt vom text wird ständig erhöht. Also bewegt sich Text weiter
             if (offsetRef.current > 100) offsetRef.current = 0   // wenn der Wert 100% erreciht -> startet die Animation weiter von vorne
 
-            const el = document.getElementById("textPath")      
+            const el = document.getElementById("textPath")
             if (el) {
                 el.setAttribute("startOffset", offsetRef.current + "%") // verschiebt den Text auf dem Pfad. Dadurch läuft der Text entlang die Linie
             }
@@ -19,14 +19,16 @@ export default function TextOnPath() {
 
     return (
         <div
-            className="w-full h-[110px] -translate-y-[280px] flex justify-center items-center overflow-visible"
+            className="w-full h-[110px] flex justify-center items-center overflow-visible
+            translate-y-[-350px] md:translate-y-[-755px] lg:-translate-y-[280px]
+            "
         >
 
             <svg
-                width="100%"
-                height="500"
+                className="w-full h-[200px] md:h-[200px] lg:h-[500px]"
                 viewBox="0 0 2000 500"
             >
+
 
                 <path
                     id="tetianaWave"
@@ -42,10 +44,10 @@ export default function TextOnPath() {
 
                 <text
                     fill="white"
-                    fontSize="48"
                     fontWeight="400"
                     letterSpacing="3px"
                     fontFamily="Aktura Regular"
+                    className="text-[76px] md:text-[52px] lg:text-[48px]"
                 >
                     <textPath id="textPath" href="#tetianaWave">
                         TETIANA RUSETSKA • 27 JÄHRIGE • WEB-ENTWICKLERIN • AUS
