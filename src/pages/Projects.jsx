@@ -4,6 +4,7 @@ import SelectedWorks4 from '../components/animations/SelectedWorks.jsx'
 function Projects() {
     return <div
         id='projects'
+        className='md:mb-[-40px] lg:mb-[0px]'
     >
         <div>
             <p
@@ -13,7 +14,7 @@ function Projects() {
             </p>
         </div>
         <div
-            className="ml-[60px] mr-[60px]"
+            className="md:ml-[60px] md:mr-[60px]"
         >
             <SelectedWorks4 />
         </div>

@@ -15,7 +15,7 @@ function Contact() {
                 <ContactForm />
             </div>
             <div
-                className="flex-1 flex flex-col gap-[25px] mt-[180px] ml-[300px]"
+                className="hidden lg:block lg:flex-1 lg:flex lg:flex-col lg:gap-[25px] lg:mt-[180px] lg:ml-[300px]"
             >
                 <div
                     className="flex flex-col gap-[10px]"

@@ -3,27 +3,36 @@ import Typewriter from '../components/animations/TypeWriter.jsx'
 
 function ITPath() {
     return <div
-        className="h-screen w-screen"
+        className="
+        h-screen w-screen 
+        md:mt-[-500px]
+        mt-[-250px]
+        lg:mt-[0px]
+        lg:mb-[0px]
+        md:mb-[-100px]
+        "
     >
         <div
             className="pageTitle"
         >
             <p
-                className="text-center leading-[1.2em] font-[Boxing] text-[72px] mt-[40px]"
+                className="
+                hidden 
+                md:block md:text-center md:leading-[1.2em] md:font-[Boxing] md:text-[72px] md:mt-[40px]"
             >
                 WEG IN DIE IT
             </p>
         </div>
         <div
-            className="content flex flex-row"
+            className="content md:flex md:flex-col lg:flex-row md:justify-center md:items-center"
         >
             <div
-                className="animation flex-1 ml-[160px] mt-[120px]"
+                className="animation mt-[350px] md:flex-1 md:mt-[40px] lg:ml-[160px] lg:mt-[120px]"
             >
                 <Typewriter />
             </div>
             <div
-                className="itInfo flex-1 flex flex-col gap-[10px] mt-[170px]"
+                className="itInfo hidden md:flex-1 md:flex md:flex-col md:gap-[10px] lg:mt-[170px] md:mt-[100px]"
             >
                 <p
                     className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[24px]"
@@ -31,16 +40,17 @@ function ITPath() {
                     Kurs "Frontend-Entwciklung", ucode, 2020-2021
                 </p>
                 <img
-                    className="w-[2px] h-[80px] ml-[80px]"
+                    className="w-[2px] h-[80px] ml-[80px] md:ml-[210px]"
                     src={img2}
-                    alt="decoration1" />
+                    alt="decoration1" 
+                     />
                 <p
                     className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[24px]"
                 >
                     React-Marathon, SoftServe, 2021
                 </p>
                 <img
-                    className="w-[2px] h-[80px] ml-[80px]"
+                    className="w-[2px] h-[80px] ml-[80px] md:ml-[210px]"
                     src={img2}
                     alt="decoration2"
                 />
