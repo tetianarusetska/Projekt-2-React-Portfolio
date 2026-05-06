@@ -9,7 +9,10 @@ export default function Footer() {
     ]
 
     return <div 
-    className="relative leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[20px] flex flex-row justify-center gap-[50px] mt-[250px] mb-[15px]"
+    className="relative flex flex-row justify-center leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[16px]
+    gap-[20px]
+    md:text-[20px]
+    lg:gap-[50px] lg:mt-[250px] lg:mb-[15px]"
     >
         {links.map((link, index) => (
             <Link key={index} to={link.target}>
