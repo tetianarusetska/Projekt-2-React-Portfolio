@@ -43,21 +43,28 @@ export default function ContactForm() {
 
     return (
         <form
-            className="flex flex-col gap-[20px] mt-[180px] ml-[160px]"
+            className="flex flex-col gap-[15px] justify-center items-center mt-[120px]
+            md:gap-[20px] md:mt-[180px] md:ml-[160px]
+            md:justify-start md:items-start
+            "
             onSubmit={handleSubmit(onSubmit)}
         >
             <div
                 className="flex flex-col gap-[10px]"
             >
                 <label
-                    className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[32px]"
+                    className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight 
+                    text-[20px] md:text-[32px]"
                 >
                     Vorname, Nachname
                 </label>
 
                 <input
                     type="text"
-                    className="border-1 h-[26px] w-[450px] leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[20px]"
+                    className="border-1 leading-[1.2em] font-[Montserrat, sans-serif] font-extralight
+                    h-[24px] w-[250px] 
+                    md:h-[26px] md:w-[450px] 
+                    text-[16px] md:text-[20px]"
                     {...register("name")}
                 />
                 {errors.name && <p>{errors.name.message}</p>}
@@ -67,14 +74,20 @@ export default function ContactForm() {
                 className="flex flex-col gap-[10px]"
             >
                 <label
-                    className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[32px]"
+                    className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight 
+                    text-[20px] md:text-[32px]
+                    "
                 >
                     Email
                 </label>
 
                 <input
                     type="email"
-                    className="border-1 h-[26px] w-[450px] leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[20px]"
+                    className="border-1 leading-[1.2em] font-[Montserrat, sans-serif] font-extralight
+                    h-[24px] w-[250px] 
+                    md:h-[26px] md:w-[450px]
+                    text-[16px] md:text-[20px]
+                    "
                     {...register("email")}
                 />
                 {errors.email && <p>{errors.email.message}</p>}
@@ -84,14 +97,20 @@ export default function ContactForm() {
                 className="flex flex-col gap-[10px]"
             >
                 <label
-                    className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[32px]"
+                    className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight 
+                    text-[20px] md:text-[32px]
+                    "
                 >
                     Brief
                 </label>
 
                 <textarea
                     maxLength={300}
-                    className="border-1 h-[100px] w-[450px] leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[20px]"
+                    className="border-1 leading-[1.2em] font-[Montserrat, sans-serif] font-extralight
+                    h-[24px] w-[250px]  
+                    md:h-[100px] md:w-[450px] 
+                    text-[16px] md:text-[20px]
+                    "
                     {...register("message")}
                 />
                 {errors.message && <p>{errors.message.message}</p>}

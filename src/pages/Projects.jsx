@@ -29,7 +29,9 @@ function Projects() {
         >
             <HoverTicker />
         </div>
-        <GitHubProjects username="tetianarusetska" />
+        <div>
+            <GitHubProjects username="tetianarusetska" />
+        </div>
     </div>
 }
 

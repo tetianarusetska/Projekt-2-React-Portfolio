@@ -19,7 +19,9 @@ export default function TextOnPath() {
 
     return (
         <div
-           className="w-full h-[110px] translate-y-[120px] flex justify-center items-center overflow-visible"
+           className="w-full h-[110px] flex justify-center items-center overflow-visible
+           translate-y-[50px] md:translate-y-[50px] lg:-translate-y-[-120px]
+           "
         >
 
             <svg
@@ -47,6 +49,7 @@ export default function TextOnPath() {
                     fontWeight="400"
                     letterSpacing="3px"
                     fontFamily="Aktura Regular"
+                    className="text-[76px] md:text-[52px] lg:text-[48px]"
                 >
                     <textPath id="textPath2" href="#tetianaWave">
                         TETIANA RUSETSKA • 27 JÄHRIGE • WEB-ENTWICKLERIN • AUS
