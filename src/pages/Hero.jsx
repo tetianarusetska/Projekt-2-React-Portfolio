@@ -1,4 +1,5 @@
 import TextOnPath from '../components/animations/TextOnPath.jsx'
+import ThemedButton from '../components/ThemedButton.jsx'
 import Menu from '../components/Menu.jsx'
 
 function Hero() {
@@ -6,8 +7,11 @@ function Hero() {
         className="
         min-h-screen min-w-screen
         ">
+            <div className="flex flex-row justify-between">
         <div className="menu">
             <Menu />
+        </div>
+        <div><ThemedButton /></div>
         </div>
         <div
             className="

@@ -27,9 +27,15 @@
   --mainColor: white;
 }
 
+[data-theme="light"] {
+  --backgroundColor: white;
+  --mainColor: black;
+}
+
 body {
   background-color: var(--backgroundColor);
   color: var(--mainColor);
+  transition: 0.3s ease;
 }
 
 html {
