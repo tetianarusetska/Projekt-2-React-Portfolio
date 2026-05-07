@@ -51,7 +51,7 @@ FRANKFURT AM MAIN
 +49 151 21268773
 rusetskatata@gmail.com`,
     fontSize = 38,
-    color = "#ffffff",
+    color = "var(--mainColor)",
     lineHeight = 1.2,
 }) {
     const [activeLine, setActiveLine] = React.useState(null) // hier wird gespeichert welche Zeile mit der Maus aktiv ist 

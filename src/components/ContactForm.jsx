@@ -118,7 +118,7 @@ export default function ContactForm() {
 
             <button
                 type="submit"
-                className="w-[96px] h-[31px] text-black bg-white"
+                className="w-[96px] h-[31px] text-[var(--bgColor)] bg-[var(--mainColor)]"
                 disabled={loading}
             >
                 {loading ? "Sending..." : "Absenden"}

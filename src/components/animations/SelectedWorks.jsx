@@ -67,7 +67,7 @@ export default function SelectedWorks4({
 
     return (
         <div
-            className="w-full text-white font-normal font-[Montserrat]"
+            className="w-full text-[var(--mainColor)] font-normal font-[Montserrat]"
             style={{ fontSize }}
         >
             {works.map((work, i) => ( // alle Proj werden automatisch angezeigt
@@ -81,7 +81,7 @@ export default function SelectedWorks4({
 
                     {i < works.length - 1 && (
                         <div
-                            className="h-px bg-white/20 ml-[40px] md:ml-[60px]"
+                            className="h-px bg-[var(--mainColor)]/20 ml-[40px] md:ml-[60px]"
                         />
                     )}
                 </React.Fragment>

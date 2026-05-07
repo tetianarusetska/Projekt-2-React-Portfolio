@@ -1,7 +1,13 @@
-import img2 from '../assets/images/rectangle.svg'
+import { useContext } from "react"
+import ThemeContext from "../contexts/ThemeContext.js"
+
+import darkImage from '../assets/images/rectangle.svg'
+import lightImage from '../assets/images/Rectangle11.svg'
 import Typewriter from '../components/animations/TypeWriter.jsx'
 
 function ITPath() {
+    const { theme } = useContext(ThemeContext);
+
     return <div
         className="
         h-screen w-screen 
@@ -41,9 +47,9 @@ function ITPath() {
                 </p>
                 <img
                     className="w-[2px] h-[80px] ml-[80px] md:ml-[210px]"
-                    src={img2}
-                    alt="decoration1" 
-                     />
+                    src={theme.name === "dark" ? darkImage : lightImage}
+                    alt="decoration1"
+                />
                 <p
                     className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[24px]"
                 >
@@ -51,7 +57,7 @@ function ITPath() {
                 </p>
                 <img
                     className="w-[2px] h-[80px] ml-[80px] md:ml-[210px]"
-                    src={img2}
+                    src={theme.name === "dark" ? darkImage : lightImage}
                     alt="decoration2"
                 />
                 <p

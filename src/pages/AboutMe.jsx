@@ -17,11 +17,11 @@ function AboutMe() {
 
     return <div
         id="aboutme" className="
-        min-h-screen min-w-screen 
+        h-screen w-screen
         lg:px-[80px]
         md:mt-[-600px]
         mt-[-250px]
-        lg:mt-[0px]
+        lg:mt-[-100px]
         "
     >
         <div
@@ -80,7 +80,7 @@ function AboutMe() {
                             <li key={index}>
                                 <a href={item.link}>
                                     <FontAwesomeIcon icon={iconsMap[item.icon]}
-                                        className="text-white text-4xl"
+                                        className="text-[var(--mainColor)] text-4xl"
                                     >
                                     </FontAwesomeIcon>
                                 </a>

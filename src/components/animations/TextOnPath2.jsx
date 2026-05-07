@@ -39,12 +39,12 @@ export default function TextOnPath() {
                         C 1300 60, 1600 440, 2000 250
                     "
                     fill="none"
-                    stroke="white"
+                    stroke="var(--mainColor)"
                     strokeWidth="2"
                 />
 
                 <text
-                    fill="white"
+                    fill="var(--mainColor)"
                     fontSize="48"
                     fontWeight="400"
                     letterSpacing="3px"

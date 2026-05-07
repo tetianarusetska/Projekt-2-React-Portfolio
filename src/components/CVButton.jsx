@@ -9,7 +9,7 @@ export default function DownloadButton() {
                 w-[170px] h-[40px]
                 mt-[63px] py-[16px] px-[35px]
                 flex items-center justify-center gap-2
-                text-white font-extralight text-[20px] font-[Montserrat, sans-serif]
+                text-[var(--mainColor)] font-extralight text-[20px] font-[Montserrat, sans-serif]
                 rounded-3xl
                 backdrop-blur-md
                 bg-white/10
@@ -21,7 +21,7 @@ export default function DownloadButton() {
             "
         >
             Lebenslauf
-            <Download className="w-5 h-5 text-white shrink-0" />
+            <Download className="w-5 h-5 text-[var(--mainColor)] shrink-0" />
         </a>
     );
 }

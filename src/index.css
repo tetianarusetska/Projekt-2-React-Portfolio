@@ -23,17 +23,17 @@
 }
 
 :root {
-  --backgroundColor: black;
+  --bgColor: black;
   --mainColor: white;
 }
 
 [data-theme="light"] {
-  --backgroundColor: white;
+  --bgColor: white;
   --mainColor: black;
 }
 
 body {
-  background-color: var(--backgroundColor);
+  background-color: var(--bgColor);
   color: var(--mainColor);
   transition: 0.3s ease;
 }
