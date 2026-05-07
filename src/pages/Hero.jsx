@@ -7,11 +7,12 @@ function Hero() {
         className="
         min-h-screen min-w-screen
         ">
-            <div className="flex flex-row justify-between">
-        <div className="menu">
-            <Menu />
-        </div>
-        <div><ThemedButton /></div>
+        <div className="md:translate-y-0 md:flex md:flex-row md:justify-between">
+            <div className="menu">
+                <Menu />
+            </div>
+            <div >
+                <ThemedButton /></div>
         </div>
         <div
             className="

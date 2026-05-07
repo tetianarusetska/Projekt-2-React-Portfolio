@@ -10,7 +10,7 @@ export default function ThemeButton() {
     return (
         <button
             onClick={toggleTheme}
-            className="fixed top-4 right-4 z-50 mt-[20px] mr-[160px]"
+            className="translate-x-[20px] translate-y-[-160px] md:translate-x-0 md:translate-y-0 md:mt-[30px] md:mr-[80px] lg:mt-[30px] lg:mr-[170px]"
         >
             <img
                 src={theme.name === "dark" ? lightIcon : darkIcon}
