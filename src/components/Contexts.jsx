@@ -12,9 +12,9 @@ export default function Contexts({ children }) {
             document.documentElement.setAttribute(
                 "data-theme",
                 newTheme.name
-            )
+            );
 
-            return newTheme
+            return newTheme;
         });
     }
 
