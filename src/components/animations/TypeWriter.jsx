@@ -6,8 +6,8 @@ const items = [
     { text: "JavaScript", animated: true },
     { text: "TypeScript", animated: false },
     { text: "React", animated: true },
-    { text: "Angular", animated: false },
-    { text: "Node.js", animated: true },
+    { text: "Express", animated: false },
+    { text: "NextJS", animated: true },
 ]
 
 export default function Typewriter({

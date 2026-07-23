@@ -26,9 +26,8 @@ function WorkRow({ index, title, category, link }) { // erstellt eine einzelne Z
             <motion.div // das ist die sichtbare Zeile mit Animationen
                 onMouseMove={onMouseMove}
                 onMouseLeave={onMouseLeave}
-                className="
-                grid grid-cols-[40px_1fr] gap-y-1 py-4 items-center cursor-pointer
-                md:grid grid-cols-[60px_1fr_auto] md:gap-y-0 md:items-center md:py-6 cursor-pointer"
+                className="grid grid-cols-[40px_1fr] gap-y-1 py-4 items-center cursor-pointer
+                           md:grid grid-cols-[60px_1fr_auto] md:gap-y-0 md:items-center md:py-6 cursor-pointer"
                 style={{ x: smoothX, y: smoothY }}
             >
                 <span className="opacity-50 text-sm md:text-3xl">{index}</span>
@@ -44,7 +43,8 @@ export default function SelectedWorks4({
         { title: "Yehor Lemzyakoff", category: "Figma", link: "/project1" },
         { title: "Portfolio", category: "Framer", link: "/project2" },
         { title: "abc Buchhandlung", category: "HTML, CSS, JS", link: "/project3" },
-        { title: "Project 4", category: "React, Tailwind", link: "/project4" },
+        { title: "MONO Fotoarchiv", category: "React, Tailwind", link: "/project4" },
+        { title: "-----", category: "Backend", link: "/project5" },
     ],
     fontSize = 32,
 }) {

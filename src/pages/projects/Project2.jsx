@@ -25,6 +25,12 @@ export default function Project2() {
             >
                 Ich wollte meine kreative Seite bei der Erstellung meines Portfolios zeigen. So ist diese einseitige Visitenkarte entstanden. Sie enthält eine beträchtliche Menge an Code – die gesamte Animation wurde selbst geschrieben. Außerdem plane ich, sie später mit verschiedenen Projekten zu erweitern.
             </p>
+            <a
+                href="https://framer.com/projects/Portfolio--SWsAKpJZZmcsCt86Opy2-aXdE9"
+                className="underline px-[260px] leading-[1.2em] font-[Montserrat, sans-serif] text-[20px] font-extralight"
+            >
+                Projekt anschauen
+            </a>
             <img
                 src={img8}
                 alt="img8"

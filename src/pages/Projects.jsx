@@ -1,6 +1,5 @@
 import HoverTicker from '../components/animations/HoverTicker.jsx'
 import SelectedWorks4 from '../components/animations/SelectedWorks.jsx'
-import GitHubProjects from '../components/GitHubProjects.jsx'
 
 function Projects() {
     return <div
@@ -28,9 +27,6 @@ function Projects() {
             className="mt-[30px]"
         >
             <HoverTicker />
-        </div>
-        <div>
-            <GitHubProjects username="tetianarusetska" />
         </div>
     </div>
 }

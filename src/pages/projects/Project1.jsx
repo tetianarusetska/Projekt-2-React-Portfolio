@@ -27,6 +27,12 @@ export default function Project1() {
             >
                 Die Idee des Projekts besteht darin, eine einzigartige Plattform für einen einzelnen Fotografen zu schaffen. Die Einzigartigkeit liegt darin, dass die Website alle Prozesse der analogen Fotografie zeigt. Außerdem kann man sich auf der Website das Portfolio des Autors, seine Biografie und seine Ausstellungshistorie ansehen sowie ein Fotoshooting buchen. Erstellt in Figma.
             </p>
+            <a
+                href="https://www.figma.com/design/SkrHlovxbKtmknxyOd2wDh/Projekt-1?node-id=0-1&t=aKQNtj7eSCWBjJyr-1"
+                className="underline px-[260px] leading-[1.2em] font-[Montserrat, sans-serif] text-[20px] font-extralight"
+            >
+                Projekt anschauen
+            </a>
             <img
                 src={img1}
                 alt="img1"

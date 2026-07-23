@@ -2,7 +2,7 @@ import * as React from "react"
 import { motion, useAnimation } from "framer-motion"
 
 export default function HoverTicker({
-    text = "HTML, CSS, JavaScript, TypeScript, React, Angular, Node.js, Vue.js",
+    text = "HTML, CSS, JavaScript, TypeScript, React, Node.js, Tailwind CSS, Express, PostgreSQL, NextJS, Prisma, Neon, Postman, Docker,",
     speed = 20,
 }) {
     const controls = useAnimation() // hier wird einen Obj erstellt -> um Animation manuell steuern

@@ -12,6 +12,7 @@ import Datenschutz from "./pages/footer-pages/Datenschutz.jsx"
 import FooterContact from "./pages/footer-pages/FooterContact.jsx"
 import ScrollToHash from "./components/ScrollToHash.jsx"
 import ScrollToTop from "./components/ScrollToTop.jsx"
+import Project4 from "./pages/projects/Project4.jsx"
 
 
 export default function Router() {
@@ -36,6 +37,7 @@ export default function Router() {
         <Route path="/project1" element={<Project1 />} />
         <Route path="/project2" element={<Project2 />} />
         <Route path="/project3" element={<Project3 />} />
+        <Route path="/project4" element={<Project4 />} />
 
       </Routes>
     </>

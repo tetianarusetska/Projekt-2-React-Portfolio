@@ -1,22 +1,8 @@
 export default function TextAbout() {
     return (
         <div
-            className="
-            w-[279px] h-[458px]
-            md:w-[500px] 
-            md:h-[266px]
-          bg-white
-          text-[#00065E]
-            text-[20px]
-            font-normal
-            leading-[24px]
-            px-[12px]
-            box-border
-            overflow-hidden
-            font-['Montserrat',sans-serif]
-            bg-[repeating-linear-gradient(to_bottom,transparent_0px,transparent_23px,#00065E_23px,#00065E_24px)]
-            bg-[length:100%_24px]
-        "
+            className="w-[279px] h-[458px] bg-white text-[#00065E] text-[20px] font-normal leading-[24px] px-[12px] box-border overflow-hidden font-['Montserrat',sans-serif] bg-[repeating-linear-gradient(to_bottom,transparent_0px,transparent_23px,#00065E_23px,#00065E_24px)] bg-[length:100%_24px]
+            md:w-[500px] md:h-[266px]"
         >
             <p style={{ margin: '0 0 25px 0' }}>
                 Ich heiße Tetiana (Tata) und ich bin 27 Jahre alt.<br />
