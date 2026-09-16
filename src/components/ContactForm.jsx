@@ -46,9 +46,7 @@ export default function ContactForm() {
             className="flex flex-col gap-[15px] justify-center items-center mt-[120px] md:gap-[20px] md:mt-[180px] md:ml-[160px] md:justify-start md:items-start"
             onSubmit={handleSubmit(onSubmit)}
         >
-            <div
-                className="flex flex-col gap-[10px]"
-            >
+            <div className="flex flex-col gap-[10px]">
                 <label
                     className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight 
                     text-[20px] md:text-[32px]"
@@ -64,9 +62,7 @@ export default function ContactForm() {
                 {errors.name && <p>{errors.name.message}</p>}
             </div>
 
-            <div
-                className="flex flex-col gap-[10px]"
-            >
+            <div className="flex flex-col gap-[10px]">
                 <label
                     className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[20px] md:text-[32px]"
                 >
@@ -81,9 +77,7 @@ export default function ContactForm() {
                 {errors.email && <p>{errors.email.message}</p>}
             </div>
 
-            <div
-                className="flex flex-col gap-[10px]"
-            >
+            <div className="flex flex-col gap-[10px]">
                 <label
                     className="leading-[1.2em] font-[Montserrat, sans-serif] font-extralight text-[20px] md:text-[32px]"
                 >

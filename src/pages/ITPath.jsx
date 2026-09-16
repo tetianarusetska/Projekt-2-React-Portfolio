@@ -9,21 +9,15 @@ function ITPath() {
     const { theme } = useContext(ThemeContext);
 
     return <div
-        className="
-        h-screen w-screen 
-        md:mt-[-500px]
-        mt-[-250px]
-        lg:mt-[0px]
-        lg:mb-[0px]
-        md:mb-[-100px]
-        "
+        className="h-screen w-screen mt-[-250px]
+        md:mt-[-500px] md:mb-[-100px]
+        lg:mt-[0px] lg:mb-[0px]"
     >
         <div
             className="pageTitle"
         >
             <p
-                className="
-                hidden 
+                className="hidden 
                 md:block md:text-center md:leading-[1.2em] md:font-[Boxing] md:text-[72px] md:mt-[40px]"
             >
                 WEG IN DIE IT

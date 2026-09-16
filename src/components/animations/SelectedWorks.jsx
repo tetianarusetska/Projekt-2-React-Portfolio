@@ -80,9 +80,7 @@ export default function SelectedWorks4({
                     />
 
                     {i < works.length - 1 && (
-                        <div
-                            className="h-px bg-[var(--mainColor)]/20 ml-[40px] md:ml-[60px]"
-                        />
+                        <div className="h-px bg-[var(--mainColor)]/20 ml-[40px] md:ml-[60px]" />
                     )}
                 </React.Fragment>
             ))}

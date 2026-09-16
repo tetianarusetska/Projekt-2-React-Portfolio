@@ -63,9 +63,7 @@ export default function Typewriter({
     }, [])
 
     return (
-        <div
-            className="w-[370px] h-[413px] box-border overflow-hidden bg-white flex flex-col justify-center gap-[10px] bg-[linear-gradient(#000_1px,transparent_1px),linear-gradient(90deg,#000_1px,transparent_1px)] bg-[length:30px_30px]"
-        >
+        <div className="w-[370px] h-[413px] box-border overflow-hidden bg-white flex flex-col justify-center gap-[10px] bg-[linear-gradient(#000_1px,transparent_1px),linear-gradient(90deg,#000_1px,transparent_1px)] bg-[length:30px_30px]">
             {items.map((item) => ( // alle Worte werden untereinander angezeigt
                 <div
                     key={item.text}

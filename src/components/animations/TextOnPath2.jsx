@@ -18,19 +18,13 @@ export default function TextOnPath() {
     }, [])
 
     return (
-        <div
-           className="w-full h-[110px] flex justify-center items-center overflow-visible
-           translate-y-[50px] md:translate-y-[50px] lg:-translate-y-[-120px]
-           "
-        >
-
+        <div className="w-full h-[110px] flex justify-center items-center overflow-visible translate-y-[50px] md:translate-y-[50px] lg:-translate-y-[-120px]">
             <svg
                 width="100%"
                 height="500"
                 viewBox="0 0 2000 500"
                 className="pointer-events-none absolute"
             >
-
                 <path
                     id="tetianaWave"
                     d="
@@ -42,7 +36,6 @@ export default function TextOnPath() {
                     stroke="var(--mainColor)"
                     strokeWidth="2"
                 />
-
                 <text
                     fill="var(--mainColor)"
                     fontSize="48"
@@ -59,9 +52,7 @@ export default function TextOnPath() {
                         UKRAINE • KIEW
                     </textPath>
                 </text>
-
             </svg>
-
         </div>
     )
 }
