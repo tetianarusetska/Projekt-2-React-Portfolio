@@ -5,7 +5,7 @@ function Projects() {
     return (
         <div
             id='projects'
-            className='md:mb-[-40px] lg:mb-[0px] md:mt-[0px] mt-[-120px]'
+            className='md:mb-[-40px] lg:mb-[0px] md:mt-[180px] lg:mt-0 mt-[-120px]'
         >
             <div>
                 <p

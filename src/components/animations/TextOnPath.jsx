@@ -18,7 +18,7 @@ export default function TextOnPath() {
     }, [])
 
     return (
-        <div className="w-full h-[110px] flex justify-center items-center overflow-visible translate-y-[-350px] md:translate-y-[-755px] lg:-translate-y-[280px]">
+        <div className="w-full h-[110px] flex justify-center items-center overflow-visible translate-y-[-350px] md:translate-y-[-655px] lg:-translate-y-[280px]">
             <svg
                 className="w-full h-[200px] md:h-[200px] lg:h-[500px]"
                 viewBox="0 0 2000 500"

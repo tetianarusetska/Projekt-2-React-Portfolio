@@ -9,7 +9,7 @@ function ITPath() {
     const { theme } = useContext(ThemeContext);
 
     return (
-        <div className="h-screen w-screen mt-[-250px] md:mt-[-500px] md:mb-[-100px] lg:mt-[0px] lg:mb-[0px]">
+        <div className="h-screen w-screen mt-[-250px] md:mt-[-320px] md:mb-[-100px] lg:mt-[0px] lg:mb-[0px]">
             <div
                 className="pageTitle"
             >
@@ -24,7 +24,7 @@ function ITPath() {
                 className="content md:flex md:flex-col lg:flex-row md:justify-center md:items-center"
             >
                 <div
-                    className="animation mt-[350px] md:flex-1 md:mt-[40px] lg:ml-[160px] lg:mt-[120px]"
+                    className="animation mt-[350px] md:flex-1 md:mt-[80px] lg:ml-[160px] lg:mt-[120px]"
                 >
                     <Typewriter />
                 </div>
@@ -37,7 +37,7 @@ function ITPath() {
                         Kurs "Frontend-Entwciklung", ucode, 2020-2021
                     </p>
                     <img
-                        className="w-[2px] h-[80px] ml-[80px] md:ml-[210px]"
+                        className="w-[2px] h-[80px] ml-[80px] md:mx-auto"
                         src={theme.name === "dark" ? darkImage : lightImage}
                         alt="decoration1"
                     />
@@ -47,7 +47,7 @@ function ITPath() {
                         React-Marathon, SoftServe, 2021
                     </p>
                     <img
-                        className="w-[2px] h-[80px] ml-[80px] md:ml-[210px]"
+                        className="w-[2px] h-[80px] ml-[80px] md:mx-auto"
                         src={theme.name === "dark" ? darkImage : lightImage}
                         alt="decoration2"
                     />
