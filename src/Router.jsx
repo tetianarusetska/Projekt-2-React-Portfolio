@@ -9,6 +9,7 @@ import Project1 from './pages/projects/Project1.jsx'
 import Project2 from './pages/projects/Project2.jsx'
 import Project3 from './pages/projects/Project3.jsx'
 import Project4 from "./pages/projects/Project4.jsx"
+import Project5 from "./pages/projects/Project5.jsx"
 
 import Impressum from "./pages/footer-pages/Impressum.jsx"
 import Datenschutz from "./pages/footer-pages/Datenschutz.jsx"
@@ -41,6 +42,7 @@ export default function Router() {
         <Route path="/project2" element={<Project2 />} />
         <Route path="/project3" element={<Project3 />} />
         <Route path="/project4" element={<Project4 />} />
+        <Route path="/project5" element={<Project5 />} />
 
       </Routes>
     </>

@@ -44,7 +44,7 @@ export default function SelectedWorks4({
         { title: "Portfolio", category: "Framer", link: "/project2" },
         { title: "abc Buchhandlung", category: "HTML, CSS, JS", link: "/project3" },
         { title: "MONO Fotoarchiv", category: "React, Tailwind", link: "/project4" },
-        { title: "-----", category: "Backend", link: "/project5" },
+        { title: "i . nspira Digitales Archiv", category: "Next.js, Prisma, PostgreSQL", link: "/project5" },
     ],
     fontSize = 32,
 }) {
